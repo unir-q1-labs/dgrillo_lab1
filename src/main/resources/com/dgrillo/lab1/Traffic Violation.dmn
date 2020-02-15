@@ -57,6 +57,9 @@
         <dmn:inputExpression id="_25BAA775-7464-4372-B6DD-309714DFCBE4" typeRef="string">
           <dmn:text>Violation.Type</dmn:text>
         </dmn:inputExpression>
+        <dmn:inputValues kie:constraintType="enumeration" id="_33BA3D46-C104-4DAD-9CDE-F815E0AF266A">
+          <dmn:text>"speed","parking","driving under the influence"</dmn:text>
+        </dmn:inputValues>
       </dmn:input>
       <dmn:input id="_2586A5FF-7793-4814-947D-D5BFA40FB08B">
         <dmn:inputExpression id="_1968CCC6-F9AF-4E50-AAD5-A5F4CCA089F1" typeRef="number">
@@ -65,6 +68,20 @@
       </dmn:input>
       <dmn:output id="_D78EB91E-8088-4724-B97C-150DD3DEB5FB" name="Amount" typeRef="number"/>
       <dmn:output id="_419B7DF2-FB96-4B11-9EF4-C07C50DEE26B" name="Points" typeRef="number"/>
+      <dmn:rule id="_3CCBFF44-B6C6-484F-9632-BF9F44B0C248">
+        <dmn:inputEntry id="_3D0E0D3F-12CE-432E-B1EE-D5665707050F">
+          <dmn:text>"speed"</dmn:text>
+        </dmn:inputEntry>
+        <dmn:inputEntry id="_899A98E5-75ED-4965-A217-A03B94781D1A">
+          <dmn:text>&lt;10</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_151B1349-97E0-4E7E-9906-CDEE5309AF12">
+          <dmn:text>0</dmn:text>
+        </dmn:outputEntry>
+        <dmn:outputEntry id="_017A9C33-3FC0-4E57-A87C-FAF86D2D9E6C">
+          <dmn:text>0</dmn:text>
+        </dmn:outputEntry>
+      </dmn:rule>
       <dmn:rule id="_3299CA3A-214E-4EF2-9591-8BB25F309F28">
         <dmn:inputEntry id="_473298DC-4068-4C78-8103-D753AD2338A1">
           <dmn:text>"speed"</dmn:text>
@@ -81,7 +98,7 @@
       </dmn:rule>
       <dmn:rule id="_45424B0D-6C95-4994-BE20-99443C91041E">
         <dmn:inputEntry id="_74C9CF12-281C-41C3-BDED-5CEE5A535264">
-          <dmn:text>"spped"</dmn:text>
+          <dmn:text>"speed"</dmn:text>
         </dmn:inputEntry>
         <dmn:inputEntry id="_720915A0-6BC8-4393-B382-DFFF2FD1EA2C">
           <dmn:text>&gt;= 30</dmn:text>
