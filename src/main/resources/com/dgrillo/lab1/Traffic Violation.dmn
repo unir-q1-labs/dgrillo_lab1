@@ -57,7 +57,7 @@
     <dmn:extensionElements/>
     <dmn:question>Should the driver be suspended due to points on his driver license?</dmn:question>
     <dmn:allowedAnswers>Yes, No</dmn:allowedAnswers>
-    <dmn:variable id="_183A6C88-6D5B-4F6D-A1D3-E153E6258226" name="Should the driver be suspended?"/>
+    <dmn:variable id="_183A6C88-6D5B-4F6D-A1D3-E153E6258226" name="Should the driver be suspended?" typeRef="string"/>
     <dmn:informationRequirement id="_35BD9228-BA96-47DB-B0F5-82632A5DBDE4">
       <dmn:requiredInput href="#_CDD79ED5-8DA4-4F50-8D1C-CA1AFA433563"/>
     </dmn:informationRequirement>
@@ -84,7 +84,7 @@
           <dmndi:StrokeColor red="0" green="0" blue="0"/>
           <dmndi:FontColor red="0" green="0" blue="0"/>
         </dmndi:DMNStyle>
-        <dc:Bounds x="402" y="175" width="100" height="50"/>
+        <dc:Bounds x="402" y="160" width="100" height="50"/>
         <dmndi:DMNLabel/>
       </dmndi:DMNShape>
       <dmndi:DMNShape id="dmnshape-_70DAA423-1F3C-4766-9775-15B355C11C57" dmnElementRef="_70DAA423-1F3C-4766-9775-15B355C11C57" isCollapsed="false">
@@ -93,7 +93,7 @@
           <dmndi:StrokeColor red="0" green="0" blue="0"/>
           <dmndi:FontColor red="0" green="0" blue="0"/>
         </dmndi:DMNStyle>
-        <dc:Bounds x="297" y="63" width="100" height="50"/>
+        <dc:Bounds x="297" y="48" width="100" height="50"/>
         <dmndi:DMNLabel/>
       </dmndi:DMNShape>
       <dmndi:DMNShape id="dmnshape-_824D5260-AE66-471C-8010-0BADAB5B7419" dmnElementRef="_824D5260-AE66-471C-8010-0BADAB5B7419" isCollapsed="false">
@@ -102,7 +102,7 @@
           <dmndi:StrokeColor red="0" green="0" blue="0"/>
           <dmndi:FontColor red="0" green="0" blue="0"/>
         </dmndi:DMNStyle>
-        <dc:Bounds x="377" y="276" width="100" height="50"/>
+        <dc:Bounds x="377" y="261" width="100" height="50"/>
         <dmndi:DMNLabel/>
       </dmndi:DMNShape>
       <dmndi:DMNShape id="dmnshape-_CDD79ED5-8DA4-4F50-8D1C-CA1AFA433563" dmnElementRef="_CDD79ED5-8DA4-4F50-8D1C-CA1AFA433563" isCollapsed="false">
@@ -111,20 +111,20 @@
           <dmndi:StrokeColor red="0" green="0" blue="0"/>
           <dmndi:FontColor red="0" green="0" blue="0"/>
         </dmndi:DMNStyle>
-        <dc:Bounds x="209" y="241" width="100" height="50"/>
+        <dc:Bounds x="209" y="226" width="100" height="50"/>
         <dmndi:DMNLabel/>
       </dmndi:DMNShape>
       <dmndi:DMNEdge id="dmnedge-_4BA98565-BDC1-4E76-AC8B-7DBB29ABAE79" dmnElementRef="_4BA98565-BDC1-4E76-AC8B-7DBB29ABAE79">
-        <di:waypoint x="427" y="276"/>
-        <di:waypoint x="452" y="225"/>
+        <di:waypoint x="427" y="261"/>
+        <di:waypoint x="452" y="210"/>
       </dmndi:DMNEdge>
       <dmndi:DMNEdge id="dmnedge-_35BD9228-BA96-47DB-B0F5-82632A5DBDE4" dmnElementRef="_35BD9228-BA96-47DB-B0F5-82632A5DBDE4">
-        <di:waypoint x="259" y="241"/>
-        <di:waypoint x="347" y="113"/>
+        <di:waypoint x="259" y="226"/>
+        <di:waypoint x="347" y="98"/>
       </dmndi:DMNEdge>
       <dmndi:DMNEdge id="dmnedge-_513A8147-661C-468D-994E-50E8DF07A424" dmnElementRef="_513A8147-661C-468D-994E-50E8DF07A424">
-        <di:waypoint x="452" y="175"/>
-        <di:waypoint x="347" y="113"/>
+        <di:waypoint x="452" y="160"/>
+        <di:waypoint x="347" y="98"/>
       </dmndi:DMNEdge>
     </dmndi:DMNDiagram>
   </dmndi:DMNDI>
