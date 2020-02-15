@@ -27,6 +27,9 @@
     </dmn:itemComponent>
     <dmn:itemComponent id="_D1C9C52C-DFAD-49AF-9E91-6509BC53FE7B" name="Type" isCollection="false">
       <dmn:typeRef>string</dmn:typeRef>
+      <dmn:allowedValues kie:constraintType="enumeration" id="_32C65F95-C230-4E16-B0F7-ACA3675BABD3">
+        <dmn:text>"speed", "parking", "driving under the influence"</dmn:text>
+      </dmn:allowedValues>
     </dmn:itemComponent>
     <dmn:itemComponent id="_ED3E607C-8F7D-43AA-BE20-93955F470BCC" name="Date" isCollection="false">
       <dmn:typeRef>date</dmn:typeRef>
