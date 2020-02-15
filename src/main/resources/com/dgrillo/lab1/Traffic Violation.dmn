@@ -1,6 +1,48 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <dmn:definitions xmlns:dmn="http://www.omg.org/spec/DMN/20180521/MODEL/" xmlns="https://kiegroup.org/dmn/_BC29B7C9-9223-49ED-A0AA-7669F77D97A6" xmlns:di="http://www.omg.org/spec/DMN/20180521/DI/" xmlns:kie="http://www.drools.org/kie/dmn/1.2" xmlns:feel="http://www.omg.org/spec/DMN/20180521/FEEL/" xmlns:dmndi="http://www.omg.org/spec/DMN/20180521/DMNDI/" xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" id="_1BF28289-AF7B-4529-A9D3-12B074F00EEF" name="Traffic Violation" expressionLanguage="http://www.omg.org/spec/DMN/20180521/FEEL/" typeLanguage="http://www.omg.org/spec/DMN/20180521/FEEL/" namespace="https://kiegroup.org/dmn/_BC29B7C9-9223-49ED-A0AA-7669F77D97A6">
   <dmn:extensionElements/>
+  <dmn:itemDefinition id="_46743B94-F562-4C18-B8A7-7C7C39D72831" name="tDriver" isCollection="false">
+    <dmn:itemComponent id="_FCE49551-EBE1-42AA-B13B-49A0261BF8DE" name="Points" isCollection="false">
+      <dmn:typeRef>number</dmn:typeRef>
+    </dmn:itemComponent>
+    <dmn:itemComponent id="_D5AF9D89-68A1-4D7B-88FF-0402A44C0CD2" name="City" isCollection="false">
+      <dmn:typeRef>string</dmn:typeRef>
+    </dmn:itemComponent>
+    <dmn:itemComponent id="_D69C18FA-1076-457E-911F-87A05455D52D" name="State" isCollection="false">
+      <dmn:typeRef>string</dmn:typeRef>
+    </dmn:itemComponent>
+    <dmn:itemComponent id="_71DB3127-B62A-4427-8ECE-1C6A7C107713" name="Age" isCollection="false">
+      <dmn:typeRef>number</dmn:typeRef>
+    </dmn:itemComponent>
+    <dmn:itemComponent id="_BF28B89C-FD98-4C4C-9EC1-13C347384CA0" name="Name" isCollection="false">
+      <dmn:typeRef>string</dmn:typeRef>
+    </dmn:itemComponent>
+  </dmn:itemDefinition>
+  <dmn:itemDefinition id="_894E4EE3-6C62-4C27-B5B0-F69635FCDC19" name="tViolation" isCollection="false">
+    <dmn:itemComponent id="_8C6CE685-45CB-43CF-8DD5-51C063D6605C" name="Actual Speed" isCollection="false">
+      <dmn:typeRef>number</dmn:typeRef>
+    </dmn:itemComponent>
+    <dmn:itemComponent id="_EC72BEC7-9AE0-4C93-BB24-882C1F30B96D" name="Speed Limit" isCollection="false">
+      <dmn:typeRef>number</dmn:typeRef>
+    </dmn:itemComponent>
+    <dmn:itemComponent id="_D1C9C52C-DFAD-49AF-9E91-6509BC53FE7B" name="Type" isCollection="false">
+      <dmn:typeRef>string</dmn:typeRef>
+    </dmn:itemComponent>
+    <dmn:itemComponent id="_ED3E607C-8F7D-43AA-BE20-93955F470BCC" name="Date" isCollection="false">
+      <dmn:typeRef>date</dmn:typeRef>
+    </dmn:itemComponent>
+    <dmn:itemComponent id="_0E5A72B6-701C-4DC4-B2BF-EF68E1CAC0E9" name="Code" isCollection="false">
+      <dmn:typeRef>string</dmn:typeRef>
+    </dmn:itemComponent>
+  </dmn:itemDefinition>
+  <dmn:itemDefinition id="_4E27361C-F9E4-410E-8C78-D5A38857A794" name="tFine" isCollection="false">
+    <dmn:itemComponent id="_038909FB-FDBF-4FD0-9250-B4C2B4207F42" name="Points" isCollection="false">
+      <dmn:typeRef>number</dmn:typeRef>
+    </dmn:itemComponent>
+    <dmn:itemComponent id="_3FB1DA77-77A0-4DEC-8B86-61B837BC5C6F" name="Amount" isCollection="false">
+      <dmn:typeRef>number</dmn:typeRef>
+    </dmn:itemComponent>
+  </dmn:itemDefinition>
   <dmn:decision id="_5C1ECFAB-CB6A-4B3F-BE36-4EEC27E01AE4" name="Fine">
     <dmn:extensionElements/>
     <dmn:variable id="_F87A7E2A-D685-4872-9B9F-24D61BDAB3B2" name="Fine"/>
@@ -40,13 +82,13 @@
         <dc:Bounds x="402" y="175" width="100" height="50"/>
         <dmndi:DMNLabel/>
       </dmndi:DMNShape>
-      <dmndi:DMNShape id="dmnshape-_CDD79ED5-8DA4-4F50-8D1C-CA1AFA433563" dmnElementRef="_CDD79ED5-8DA4-4F50-8D1C-CA1AFA433563" isCollapsed="false">
+      <dmndi:DMNShape id="dmnshape-_70DAA423-1F3C-4766-9775-15B355C11C57" dmnElementRef="_70DAA423-1F3C-4766-9775-15B355C11C57" isCollapsed="false">
         <dmndi:DMNStyle>
           <dmndi:FillColor red="255" green="255" blue="255"/>
           <dmndi:StrokeColor red="0" green="0" blue="0"/>
           <dmndi:FontColor red="0" green="0" blue="0"/>
         </dmndi:DMNStyle>
-        <dc:Bounds x="209" y="241" width="100" height="50"/>
+        <dc:Bounds x="297" y="63" width="100" height="50"/>
         <dmndi:DMNLabel/>
       </dmndi:DMNShape>
       <dmndi:DMNShape id="dmnshape-_824D5260-AE66-471C-8010-0BADAB5B7419" dmnElementRef="_824D5260-AE66-471C-8010-0BADAB5B7419" isCollapsed="false">
@@ -58,13 +100,13 @@
         <dc:Bounds x="377" y="276" width="100" height="50"/>
         <dmndi:DMNLabel/>
       </dmndi:DMNShape>
-      <dmndi:DMNShape id="dmnshape-_70DAA423-1F3C-4766-9775-15B355C11C57" dmnElementRef="_70DAA423-1F3C-4766-9775-15B355C11C57" isCollapsed="false">
+      <dmndi:DMNShape id="dmnshape-_CDD79ED5-8DA4-4F50-8D1C-CA1AFA433563" dmnElementRef="_CDD79ED5-8DA4-4F50-8D1C-CA1AFA433563" isCollapsed="false">
         <dmndi:DMNStyle>
           <dmndi:FillColor red="255" green="255" blue="255"/>
           <dmndi:StrokeColor red="0" green="0" blue="0"/>
           <dmndi:FontColor red="0" green="0" blue="0"/>
         </dmndi:DMNStyle>
-        <dc:Bounds x="297" y="63" width="100" height="50"/>
+        <dc:Bounds x="209" y="241" width="100" height="50"/>
         <dmndi:DMNLabel/>
       </dmndi:DMNShape>
       <dmndi:DMNEdge id="dmnedge-_4BA98565-BDC1-4E76-AC8B-7DBB29ABAE79" dmnElementRef="_4BA98565-BDC1-4E76-AC8B-7DBB29ABAE79">
